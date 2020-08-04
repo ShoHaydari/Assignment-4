@@ -59,7 +59,7 @@ void RationalNumber::reduce(){
 }
 
 bool RationalNumber:: operator<(const RationalNumber& r){
-    if(static_cast<double>(r.numerator)/r.denominator<static_cast<double>(numerator)/denominator)
+    if(static_cast<double>(numerator)/denominator<static_cast<double>(r.numerator)/r.denominator)
     {
         return true;
     }
